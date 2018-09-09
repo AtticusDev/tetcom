@@ -78,4 +78,110 @@
 }
 
 
+/* FORM STYLING */
+
+.gform_wrapper.two-column_wrapper ul.gform_fields {
+display: none;
+}
+.gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+display: block;
+float: left;
+width: 50%;
+}
+.gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
+display: none;
+}
+.gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+  border: 0px;
+  background-color: #f5f5f3;
+}
+.gform_wrapper .gform_body .gform_fields .gfield textarea {
+  border: 0px;
+  height: 11.4rem;
+  background-color: #f5f5f3; 
+}
+.gform_wrapper .gform_body .gform_fields .gfield .gfield_label {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-transform: uppercase;
+}
+.gform_wrapper .gform_footer input[type=submit] {
+  padding:1rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-transform: uppercase;
+  background-color: #999999;
+  
+}
+div.gform_footer.top_label {
+ text-align: center;
+ font-size: 0.8rem;
+}
+
+/* END FORM STYLING */
+
+/* ACCORDIAN */
+
+
+
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+
+.accordian-title {
+  height: 40px;
+  background: #DF4910;
+  color: #fff;
+  text-align: center;
+  padding-top: 13px;
+}
+.snippets-accordian {
+  width:50%;
+}
+.snippets-accordian li {
+  padding:2px;
+}
+
+.snippets-accordian li.q {
+  color: #050505;
+  font-weight: bold;
+  font-size: 120%;
+  cursor: pointer;
+}
+
+.snippets-accordian li.a {
+  display: none;
+}
+
+
+.rotate {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+
+
+/*
+.accordian {
+  dt {
+      padding: 10px;
+      border-bottom: 0;
+  }
+  dd {
+     border-top: 0; 
+     font-size: 12px;
+  }
+}
+
+*/
+
+/* END ACCORDIAN */
+
 
