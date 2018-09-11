@@ -77,6 +77,25 @@
 	}
 }
 
+body{
+  font-size:0.9rem;
+}
+
+.text-primary {
+  color: #89c34a;
+}
+
+h1{
+  
+}
+h2 {
+  font-size:1.5rem;
+}
+
+
+/* NAVIGATION STYLING */
+
+
 
 /* FORM STYLING */
 
@@ -166,21 +185,6 @@ li {
   transform: rotate(90deg);
 }
 
-
-
-/*
-.accordian {
-  dt {
-      padding: 10px;
-      border-bottom: 0;
-  }
-  dd {
-     border-top: 0; 
-     font-size: 12px;
-  }
-}
-
-*/
 
 /* END ACCORDIAN */
 

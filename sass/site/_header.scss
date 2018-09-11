@@ -1,3 +1,32 @@
 .site-header {
 	margin-bottom: 3em;
 }
+
+.socialBox{
+	border-radius: 25px;
+    background: $custom;
+    width: 100px;
+    height: 32px;
+
+}
+
+ .navbar-nav {
+    .nav-link {
+      color: #ffffff;
+
+      @include hover-focus {
+        color: $custom;
+      }
+
+      &.disabled {
+        color: $custom;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $custom;
+    }
+  }

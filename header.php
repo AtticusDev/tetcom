@@ -23,15 +23,23 @@
 <div id="page" class="site">
 
 
-		<div class="container-fluid navfixed" style="background-color: black;">
+		<div class="container-fluid sticky-top" style="background-color: #000000;">
 			<div class="row">
 				<div class="container">
-					<div class="row justify-content-center">
-					    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center" >
-								<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="row">
+					    <nav class="navbar navbar-expand-md" style="width: 100%; ">
+					    		<a class="navbar-brand" href="/">
+							    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/tetcom-logo.jpg" width="135" class="d-inline-block align-top" alt="">
+								</a>
+								<div class="navbar-text">
+								    <span class="text-white">Call us on</span><br>
+									<h2 class="text-primary">0844 567 7667</h2>
+								</div>
+
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 								</button>
-						   		<div class="collapse navbar-collapse" id="navbarNav">
+						   		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					            <?php
 					            $args = array(
 					              'theme_location' => 'primary',
@@ -44,6 +52,12 @@
 					              wp_nav_menu($args);
 					            }
 					            ?>
+					            <!-- SOCIAL MEDIA ICONS -->
+					            	<div class="socialBox text-center ml-3 pt-1">
+					            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" width="18" class="mr-1">
+					            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg" width="16" class="mr-1">
+					            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg" width="18">
+					            	</div>
 					      		</div>
 				    	</nav>
 				    </div> <!-- close row -->
@@ -51,4 +65,4 @@
 			</div>
 		</div>
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content mt-5">

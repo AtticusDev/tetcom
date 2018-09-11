@@ -11,9 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="container">
+	<div class="container-fluid" >
+		<div class="row" style="background:url(<?php bloginfo('stylesheet_directory'); ?>/images/wave.svg); background-size: 100%; height: 350px; background-repeat:no-repeat;">
+			<div class="container mt-5 text-white">
 				<div class="row">
 						<div class="col">
 						<?php
