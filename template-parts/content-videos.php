@@ -6,6 +6,20 @@ VIDEO SECTION
 		<div class="row">
 			<div class="container">
 				<div class="row">
+					<div class="col-md-12 text-center mt-5">
+						<strong class="text-primary">LATEST VIDEOS</strong>
+						<h2>Learn more through our videos</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="row">
 
 						<?php 
 						$args = array( 'post_type' => 'video', 'posts_per_page' => '3', 'orderby' => 'rand' );
@@ -14,17 +28,22 @@ VIDEO SECTION
 						while ( $loop->have_posts() ) : $loop->the_post();
 						 $video = get_field( "youtube_code" );
 						?>
-						<div class="col-md-4 text-center mt-4 mb-4 p-5">
-						<p>
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo $video; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</p>
-						<p><?php the_title();?></p>
-						<p><?php the_content();?></p>
+						<div class="col-md-4 mt-4">
+							<div class="videoPanel">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo $video; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<p class="videoTitle text-primary"><?php the_title();?></p>
+							<?php the_content();?>
+							</div>
 						</div>
 						<?php 
 						endwhile;
 						wp_reset_query();
 						?>
+				</div>
+				<div class="row d-flex justify-content-end">
+					<div class="col-md-4">
+					    <a href="/support/" class="btn greenBtn">View all videos</a>
+					</div>
 				</div>
 			</div> <!-- end col -->
 		</div><!-- end row -->

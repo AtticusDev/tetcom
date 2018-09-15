@@ -5,10 +5,10 @@ TESTIMONIAL SECTION
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
-				<div class="row">
-						<div class="col-md-4 text-center mt-4 mb-4 p-5">
-							<p>Client Testimonials</p>
-							<p>What do the people that matter think about us</p>
+				<div class="row  d-flex align-items-center">
+						<div class="col-md-4 text-right mt-4 mb-4 p-5">
+						<strong class="text-primary">CLIENT TESTIMONIALS</strong>
+						<h2>What do the people that matter think about us</h2>
 						</div>
 
 						<?php 
@@ -20,10 +20,13 @@ TESTIMONIAL SECTION
 						 $quotetitle = get_field( "title" );
 						?>
 
-						<div class="col-md-4 text-center mt-4 mb-4 bg-primary p-5 text-white">
-							<div class="largeQuote text-white"><?php the_content(); ?></div>
-							<p><?php echo $quotename ?></p>
-							<p><?php echo $quotetitle ?></p>
+						<div class="col-md-4">
+							<div class="quotePanel">
+								<div class="mb-3"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/quote-marks.svg" width="37"></div>
+								<div class="largeQuote"><?php the_content(); ?></div>
+								<p class="text-primary mb-0"><?php echo $quotename ?></p>
+								<p class="text-primary mt-0"><?php echo $quotetitle ?></p>
+							</div>
 						</div>
 
 						<?php 

@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-		<div class="container-fluid">
+		<div class="container-fluid" style="background-color: #ebebeb;">
 			<div class="row">
 				<div class="footerWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/footer-wave.svg); background-position: center top; background-repeat: no-repeat; background-size: 2686px;">
 				</div>

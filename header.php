@@ -33,7 +33,7 @@
 								</a>
 								<div class="navbar-text">
 								    <span class="text-white">Call us on</span><br>
-									<h2 class="text-primary">0844 567 7667</h2>
+									<h3 class="text-primary">0844 567 7667</h3>
 								</div>
 
 								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,4 +65,4 @@
 			</div>
 		</div>
 
-	<div id="content" class="site-content mt-5">
+	<div id="content" class="site-content">
