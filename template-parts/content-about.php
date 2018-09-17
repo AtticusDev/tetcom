@@ -11,17 +11,21 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="container-fluid">
-		<div class="row">
+	<div class="container-fluid" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-position: center top; height: 700px; background-repeat: no-repeat; padding: 0px;">
+		<div class="row d-flex align-items-end" style="width: 100%; height: 100%; margin:0px;">
 			<div class="container">
 				<div class="row">
-						<div class="col">
+						<div class="col-md-6">
 						<?php
 							the_content();
 						?>
+						<a href="/contact/" class="btn blackBtn">Make an enquiry</a>
+
 						</div>
 				</div>
 			</div>
+		<div class="container-fluid footerWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/footer-wave.svg); background-position: center top; background-repeat: no-repeat; background-size: 2686px;">
+		</div>
 		</div>
 	</div>
 
@@ -29,13 +33,13 @@
 HISTORY SECTION
 -->
 
-	<div class="container-fluid">
+	<div class="container-fluid" style="background-color: #000000;">
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center mt-4 mb-4">
-					<h2>Our History</h2>
-					</div>		
+					<div class="col-md-8 text-white">
+						<?php the_field('history_intro'); ?>
+					</div>
 				</div>
 				<div class="row">
 
@@ -46,15 +50,23 @@ HISTORY SECTION
 					$description = get_sub_field('details');
 					$color = get_sub_field('color_select');
 				?>
-				<div class="col-sm col-md-4 col-lg" style="background-color: #<?php echo $color; ?>">
-					<h3><?php echo $title; ?></h3>
-				    <p><?php echo $description; ?></p>					
+				<div class="col-sm col-md-4">
+					<div class="historyPanel" style="background-color: #<?php echo $color; ?>">
+						<h3><?php echo $title; ?></h3>
+					    <p><?php echo $description; ?></p>					
+					</div>
 				</div>
 					<?php endwhile;
 				endif; ?>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container-fluid">
+			<div class="row">
+				<div class="blackBottomWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/black-bottom-wave.svg); background-position: center bottom; background-repeat: no-repeat; background-size: 2686px;">
+				</div>
+			</div>
 	</div>
 
 <!--
@@ -65,12 +77,12 @@ DEPARTMENTS SECTION
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center mt-4 mb-4">
-					<h2>Our Departments</h2>
+					<div class="col-md-12 mt-4 mb-4">
+						<?php the_field('departments_intro'); ?>
 					</div>		
 				</div>
+				<ul class='snippets-accordian'>
 				<div class="row">
-					<ul class='snippets-accordian'>
 
 				<?php if( have_rows('departments') ): 
 					 while( have_rows('departments') ): the_row(); 
@@ -79,16 +91,20 @@ DEPARTMENTS SECTION
 					$description = get_sub_field('dept_description');
 					$icon = get_sub_field('icon');
 				?>
-								<li class='q col-md-6'>
-									<!--
-									<?php echo $icon; ?>&nbsp;
-									-->
-									<?php echo $title; ?><i class="fa fa-plus"></i></li>
+						<div class="col-md-6">			
+								<li class='d-flex justify-content-between q'>
+										<div class="d-flex" style="width: 80%;">
+											<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
+											<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
+										</div>
+										<i class="fa fa-plus text-primary"></i>
+								</li>
 								<li class='a'><?php echo $description; ?></li>
+						</div>
 					<?php endwhile;
 				endif; ?>
-					</ul>
 				</div>
+				</ul>
 			</div>
 		</div>
 	</div>

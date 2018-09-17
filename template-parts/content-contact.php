@@ -66,11 +66,15 @@ DEPARTMENTS SECTION
 					$email = get_sub_field('email');
 					$color = get_sub_field('color_selection');
 				?>
-				<div class="col-sm col-md-4" style="background-color: #<?php echo $color; ?>">
-					<p style="width: 100px;"><?php echo $icon; ?></p>
-					<h3><?php echo $title; ?></h3>
-					<p><?php echo $telephone; ?></p>
-				    <p><?php echo $email; ?></p>
+				<div class="col-sm col-md-4">
+					<div class="contactPanel text-center" style="background-color: #<?php echo $color; ?>">
+						<div class="d-flex justify-content-center">
+							<p style="width: 60px; text-align: center;"><?php echo $icon; ?></p>
+						</div>
+						<h3><?php echo $title; ?></h3>
+						<p><?php echo $telephone; ?></p>
+					    <p><?php echo $email; ?></p>
+					</div>
 				</div>
 					<?php endwhile;
 				endif; ?>

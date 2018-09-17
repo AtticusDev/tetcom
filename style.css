@@ -7002,9 +7002,19 @@ h3 {
   background-color: #89c34a;
   color: #ffffff; }
 
+.blackBtn {
+  white-space: normal;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 25px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #000000;
+  color: #ffffff; }
+
 /* VIDEO PANELS */
 .videoPanel {
-  border: 1px solid #ebebeb;
+  border: 2px solid #ebebeb;
   border-radius: 15px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7027,6 +7037,24 @@ h3 {
   border: 1px solid #ebebeb;
   border-radius: 15px;
   background-color: #ebebeb;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+  margin-top: 2rem;
+  padding: 1rem; }
+
+/* HISTORY PANELS */
+.historyPanel {
+  border: 0px;
+  border-radius: 15px;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+  margin-top: 2rem;
+  padding: 1rem; }
+
+/* CONTACT PANELS */
+.contactPanel {
+  border: 0px;
+  border-radius: 15px;
   margin-right: 0.8rem;
   margin-left: 0.8rem;
   margin-top: 2rem;
@@ -7109,7 +7137,8 @@ li {
   padding-top: 13px; }
 
 .snippets-accordian {
-  width: 50%; }
+  width: 100%;
+  padding: 0px; }
 
 .snippets-accordian li {
   padding: 2px; }
@@ -7117,8 +7146,10 @@ li {
 .snippets-accordian li.q {
   color: #050505;
   font-weight: bold;
-  font-size: 120%;
-  cursor: pointer; }
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-top: 1px solid #000000;
+  padding-top: 10px; }
 
 .snippets-accordian li.a {
   display: none; }

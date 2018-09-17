@@ -19,6 +19,8 @@
 						<?php
 							the_content();
 						?>
+					    <a href="/contact/" class="btn blackBtn">Make an enquiry</a>
+
 						</div>
 				</div>
 			</div>
