@@ -52,13 +52,21 @@
 					              wp_nav_menu($args);
 					            }
 					            ?>
-					            <!-- SOCIAL MEDIA ICONS -->
-					            	<div class="socialBox text-center ml-3 pt-1">
-					            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" width="18" class="mr-1">
-					            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg" width="16" class="mr-1">
-					            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg" width="18">
-					            	</div>
 					      		</div>
+
+					            <!-- SOCIAL MEDIA ICONS -->
+					            	<div class="socialBox text-center ml-3 pt-1 d-flex justify-content-around">
+					            		<div class="tw-icon">
+						            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg">
+						            	</div>
+					            		<div class="fb-icon">
+					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg">
+						            	</div>
+					            		<div class="in-icon">
+					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg">
+					            		</div>
+					            	</div>
+
 				    	</nav>
 				    </div> <!-- close row -->
 				</div> <!-- close container -->

@@ -11,6 +11,25 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<div class="container-fluid" style="background-color: #000000;">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+						<div class="col text-primary pt-4">
+						<?php
+							the_content();
+						?>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="background-color: #ebebeb;">
+			<div class="row">
+				<div class="blackBottomWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/black-bottom-wave.svg); background-position: center bottom; background-repeat: no-repeat; background-size: 2686px;">
+				</div>
+			</div>
+	</div>
 	<div class="container-fluid" style="background-color: #ebebeb;">
 		<div class="row">
 			<div class="container">
@@ -35,19 +54,6 @@
 	</div>
 
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="container">
-				<div class="row">
-						<div class="col">
-						<?php
-							the_content();
-						?>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 <!--
 DEPARTMENTS SECTION

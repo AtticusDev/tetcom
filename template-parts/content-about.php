@@ -52,8 +52,16 @@ HISTORY SECTION
 				?>
 				<div class="col-sm col-md-4">
 					<div class="historyPanel" style="background-color: #<?php echo $color; ?>">
+					<?php if($color == 'ffffff') {?>
+						<h3 class="text-primary"><?php echo $title; ?></h3>
+					    <p><?php echo $description; ?></p>
+				    <?php } elseif($color == '939598') { ?>
+						<h3 class="text-white"><?php echo $title; ?></h3>
+					    <p><?php echo $description; ?></p>
+				    <?php } else { ?>
 						<h3><?php echo $title; ?></h3>
-					    <p><?php echo $description; ?></p>					
+					    <p><?php echo $description; ?></p>
+					<?php } ?>
 					</div>
 				</div>
 					<?php endwhile;
@@ -82,8 +90,6 @@ DEPARTMENTS SECTION
 					</div>		
 				</div>
 				<ul class='snippets-accordian'>
-				<div class="row">
-
 				<?php if( have_rows('departments') ): 
 					 while( have_rows('departments') ): the_row(); 
 					// vars
@@ -91,7 +97,6 @@ DEPARTMENTS SECTION
 					$description = get_sub_field('dept_description');
 					$icon = get_sub_field('icon');
 				?>
-						<div class="col-md-6">			
 								<li class='d-flex justify-content-between q'>
 										<div class="d-flex" style="width: 80%;">
 											<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
@@ -100,10 +105,8 @@ DEPARTMENTS SECTION
 										<i class="fa fa-plus text-primary"></i>
 								</li>
 								<li class='a'><?php echo $description; ?></li>
-						</div>
 					<?php endwhile;
 				endif; ?>
-				</div>
 				</ul>
 			</div>
 		</div>
@@ -114,10 +117,6 @@ DEPARTMENTS SECTION
 get_template_part( 'template-parts/content', 'videos' );
 ?>
 
-
-<?php
-get_template_part( 'template-parts/content', 'testimonials' );
-?>
 
 <?php
 get_template_part( 'template-parts/content', 'enquiry' );

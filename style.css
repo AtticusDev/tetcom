@@ -6979,7 +6979,30 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 100; }
+  font-weight: 400; }
+
+/* ICON ROLLOVER */
+.tw-icon {
+  width: 18px;
+  transform-origin: center;
+  transition: width .3s ease-in-out; }
+
+.tw-icon:hover {
+  width: 20px; }
+
+.fb-icon {
+  width: 18px;
+  transition: width .3s ease-in-out; }
+
+.fb-icon:hover {
+  width: 20px; }
+
+.in-icon {
+  width: 18px;
+  transition: width .3s ease-in-out; }
+
+.in-icon:hover {
+  width: 20px; }
 
 /* BUTTON STYLING */
 .readmoreBtn {
@@ -7141,18 +7164,28 @@ li {
   padding: 0px; }
 
 .snippets-accordian li {
-  padding: 2px; }
+  padding: 2px;
+  width: 45%;
+  margin-left: 10px; }
+
+.snippets-accordian li:nth-child(2n+1) {
+  float: left; }
 
 .snippets-accordian li.q {
   color: #050505;
   font-weight: bold;
   font-size: 1.8rem;
+  font-weight: 100;
   cursor: pointer;
-  border-top: 1px solid #000000;
-  padding-top: 10px; }
+  border-bottom: 1px solid #000000;
+  padding-top: 10px;
+  padding-bottom: 0px; }
 
 .snippets-accordian li.a {
   display: none; }
+
+.snippets-accordian li.q:nth-child(-n+3) {
+  border-top: 1px solid #000000; }
 
 .rotate {
   transform: rotate(90deg); }
@@ -7192,7 +7225,7 @@ li {
 .socialBox {
   border-radius: 25px;
   background: #89c34a;
-  width: 100px;
+  width: 150px;
   height: 32px; }
 
 .navbar-nav .nav-link {

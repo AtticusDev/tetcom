@@ -40,8 +40,8 @@ VIDEO SECTION
 						wp_reset_query();
 						?>
 				</div>
-				<div class="row d-flex justify-content-end">
-					<div class="col-md-4">
+				<div class="row">
+					<div class="col-md-12 text-center">
 					    <a href="/support/" class="btn greenBtn">View all videos</a>
 					</div>
 				</div>
