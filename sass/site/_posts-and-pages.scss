@@ -293,21 +293,38 @@ div.gform_footer.top_label {
 }
 
 
-
-
-
 /* END FORM STYLING */
 
+
+/* DOWNLOADS */
+.downloadSection {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.downloadSection li{
+  display:block;
+  float:left;
+  width: 48%;
+  margin-right:2%;
+  padding: 0 1rem;
+  border-bottom: 1px solid #000000;
+
+}
+
+.downloadSection li:nth-child(-n+2) {
+  border-top: 1px solid #000000;
+}
+
+
 /* ACCORDIAN */
-
-
 
 ul,
 li {
   list-style: none;
   display: block;
 }
-
 
 .accordian-title {
   height: 40px;
@@ -322,11 +339,7 @@ li {
 }
 .snippets-accordian li {
   padding:2px;
-  width: 45%;
   margin-left:10px;
-}
-.snippets-accordian li:nth-child(2n+1){
-  float:left;
 }
 
 .snippets-accordian li.q {
@@ -343,15 +356,8 @@ li {
 .snippets-accordian li.a {
   display: none;
 }
-.snippets-accordian li.q:nth-child(-n+3) {
+.snippets-accordian li.q:nth-child(-n+2) {
   border-top: 1px solid #000000;
-}
-
-
-.rotate {
-  -moz-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
 }
 
 

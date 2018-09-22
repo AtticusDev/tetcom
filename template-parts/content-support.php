@@ -141,8 +141,8 @@ DOWNLOADS SECTION
 				</div>
 			</div>
 			<div class="container">
-				<div class="row">
-
+				<div class="row" style="padding-left:15px; padding-right:15px;">
+					<ul class="downloadSection">
 						<?php 
 						$args = array( 'post_type' => 'download', 'posts_per_page' => '20', 'orderby' => 'rand' );
 						$loop = new WP_Query( $args );
@@ -150,17 +150,17 @@ DOWNLOADS SECTION
 						while ( $loop->have_posts() ) : $loop->the_post();
 						 $download = get_field( "download_document" );
 						?>
-						<div class="col-md-6 text-center mt-4 mb-4 p-5">
-							<div class="row">
-								<div style="width: 80%">
+						<li>
+							<div class="d-flex">
+								<div style="width: 85%">
 									<p><a href="<?php echo $download; ?>" target="_blank"><?php the_title();?></a></p>
 									<p><?php the_content();?></p>
 								</div>
-								<div  style="width: 20%">
+								<div  style="width: 15%">
 									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/pdf-download.svg">
 								</div>
 							</div>
-						</div>
+						</li>
 						<?php 
 						endwhile;
 						wp_reset_query();

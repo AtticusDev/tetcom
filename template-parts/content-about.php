@@ -89,25 +89,79 @@ DEPARTMENTS SECTION
 						<?php the_field('departments_intro'); ?>
 					</div>		
 				</div>
-				<ul class='snippets-accordian'>
-				<?php if( have_rows('departments') ): 
-					 while( have_rows('departments') ): the_row(); 
-					// vars
-					$title = get_sub_field('department');
-					$description = get_sub_field('dept_description');
-					$icon = get_sub_field('icon');
-				?>
-								<li class='d-flex justify-content-between q'>
-										<div class="d-flex" style="width: 80%;">
-											<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
-											<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
-										</div>
-										<i class="fa fa-plus text-primary"></i>
-								</li>
-								<li class='a'><?php echo $description; ?></li>
-					<?php endwhile;
-				endif; ?>
-				</ul>
+
+				<div class="row">
+<!-- COLUMN ONE -->
+					<div class="col-md-6">
+						<ul class='snippets-accordian'>
+						<?php if( have_rows('departments') ): 
+							 while( have_rows('departments') ): the_row(); 
+							// vars
+							$title = get_sub_field('department');
+							$description = get_sub_field('dept_description');
+							$icon = get_sub_field('icon');
+							$count = count(get_field('departments'));
+							if($count % 2 == 0){
+								$halfNum = $count/2;
+							} else {
+								$num = ($count/2);
+								$halfNum = ceil($num);
+							}
+							$rownumber = get_row_index();
+
+						?>
+									<?php if($rownumber <= $halfNum) { ?>
+										<li class='d-flex justify-content-between q'>
+											<?php echo $halfNum; ?>
+												<div class="d-flex" style="width: 80%;">
+													<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
+													<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
+												</div>
+												<i class="fa fa-plus text-primary"></i>
+										</li>
+										<li class='a'><?php echo $description; ?></li>
+									<?php } ?>
+							<?php endwhile;
+						endif; ?>
+						</ul>
+					</div>
+<!-- COLUMN TWO -->
+					<div class="col-md-6">
+						<ul class='snippets-accordian'>
+						<?php if( have_rows('departments') ): 
+							 while( have_rows('departments') ): the_row(); 
+							// vars
+							$title = get_sub_field('department');
+							$description = get_sub_field('dept_description');
+							$icon = get_sub_field('icon');
+							$count = count(get_field('departments'));
+							if($count % 2 == 0){
+								$halfNum = $count/2;
+							} else {
+								$num = ($count/2);
+								$halfNum = ceil($num);
+							}
+							$rownumber = get_row_index();
+
+						?>
+									<?php if($rownumber > $halfNum) { ?>
+										<li class='d-flex justify-content-between q'>
+											<?php echo $halfNum; ?>
+												<div class="d-flex" style="width: 80%;">
+													<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
+													<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
+												</div>
+												<i class="fa fa-plus text-primary"></i>
+										</li>
+										<li class='a'><?php echo $description; ?></li>
+									<?php } ?>
+							<?php endwhile;
+						endif; ?>
+						</ul>
+					</div>
+<!-- END COLUMN TWO -->
+
+				</div>
 			</div>
 		</div>
 	</div>
