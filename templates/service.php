@@ -1,7 +1,8 @@
 
 <?php
 /**
- * Template Name: Services
+ * Template Name: Service
+ * Template Post Type: service
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -21,7 +22,7 @@ get_header(); ?>
 					<?php
 					while ( have_posts() ) : the_post();
 
-						get_template_part( 'template-parts/content', 'services' );
+						get_template_part( 'template-parts/content', 'service' );
 
 
 					endwhile; // End of the loop.

@@ -125,4 +125,6 @@ require get_template_directory() . '/inc/post-types/register-quotes.php';
 require get_template_directory() . '/inc/post-types/register-videos.php';
 //Downloads custom post type
 require get_template_directory() . '/inc/post-types/register-downloads.php';
+//Services custom post type
+require get_template_directory() . '/inc/post-types/register-services.php';
 

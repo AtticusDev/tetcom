@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<h2>This is the content page</h2>
 
 	<?php if ( has_post_thumbnail() && is_single() ) : ?>
 		<div class="post-thumbnail">
