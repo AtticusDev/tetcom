@@ -127,4 +127,8 @@ require get_template_directory() . '/inc/post-types/register-videos.php';
 require get_template_directory() . '/inc/post-types/register-downloads.php';
 //Services custom post type
 require get_template_directory() . '/inc/post-types/register-services.php';
+//Products custom post type
+require get_template_directory() . '/inc/post-types/register-products.php';
+//System custom post type
+require get_template_directory() . '/inc/post-types/register-systems.php';
 

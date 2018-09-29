@@ -6981,6 +6981,10 @@ h3 {
   font-size: 1.5rem;
   font-weight: 400; }
 
+.introText {
+  font-size: 1.5rem;
+  font-weight: 100; }
+
 /* ICON ROLLOVER */
 .tw-icon {
   width: 18px;

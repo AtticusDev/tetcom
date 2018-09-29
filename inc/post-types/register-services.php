@@ -7,6 +7,6 @@ $quote = new CPT(array(
 	'slug' => 'service'
 ),
 	array(
-    'supports' => array('title', 'editor', 'custom-fields'),
+    'supports' => array('title', 'editor', 'custom-fields', 'thumbnail'),
     'menu_icon' => 'dashicons-portfolio'
 ));
