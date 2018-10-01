@@ -19,7 +19,7 @@
 					$link = get_field('button_link');
 				?>
 				<div class="col-sm-12 col-md-3">
-					<p style="width: 5rem; height: 5rem;"><?php echo $icon; ?></p>
+					<p style="width: 130px; height: 80px;"><?php echo $icon; ?></p>
 					<h3 class="text-primary"><a href="<?php the_permalink(); ?>" title="<?php echo $service; ?>"><?php echo $title; ?></a></h3>
 					<p class="text-white"><?php echo $description; ?></p>
 				    <a href="<?php the_permalink(); ?>" title="<?php echo $service; ?>" class="btn readmoreBtn">Read more</a>
@@ -31,11 +31,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid">
-			<div class="row">
-				<div class="blackBottomWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/black-bottom-wave.svg); background-position: center bottom; background-repeat: no-repeat; background-size: 2686px;">
-				</div>
-			</div>
 	</div>
 
