@@ -71,13 +71,9 @@
 
 
 <?php
-get_template_part( 'template-parts/content', 'videos' );
+get_template_part( 'template-parts/content', 'moreservice' );
 ?>
 
-
-<?php
-get_template_part( 'template-parts/content', 'enquiry' );
-?>
 
 
 

@@ -6,10 +6,6 @@ TESTIMONIAL SECTION
 		<div class="row">
 			<div class="container">
 				<div class="row  d-flex align-items-center">
-						<div class="col-md-4 text-right mt-4 mb-4 p-5">
-						<strong class="text-primary">CLIENT TESTIMONIALS</strong>
-						<h2>What do the people that matter think about us</h2>
-						</div>
 
 						<?php 
 						$args = array( 'post_type' => 'quote', 'posts_per_page' => '2', 'orderby' => 'rand' );
@@ -33,7 +29,11 @@ TESTIMONIAL SECTION
 						endwhile;
 						wp_reset_query();
 						?>
-				</div>
-			</div> <!-- end col -->
+						<div class="col-md-4 text-left mt-4 mb-4 p-5">
+						<strong class="text-primary">CLIENT TESTIMONIALS</strong>
+						<h2>What do the people that matter think about us</h2>
+						</div>
+				</div> <!-- end row -->
+			</div> <!-- end container -->
 		</div><!-- end row -->
 	</div><!-- end container -->

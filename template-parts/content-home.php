@@ -32,6 +32,12 @@
 <?php
 get_template_part( 'template-parts/content', 'servicepanels' );
 ?>
+	<div class="container-fluid">
+			<div class="row">
+				<div class="blackBottomWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/black-bottom-wave.svg); background-position: center bottom; background-repeat: no-repeat; background-size: 2686px;">
+				</div>
+			</div>
+	</div>
 
 
 <?php
