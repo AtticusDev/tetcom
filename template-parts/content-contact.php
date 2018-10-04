@@ -7,6 +7,7 @@
  * @package Tetcom
  */
 
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -77,7 +78,7 @@ DEPARTMENTS SECTION
 						<div class="d-flex justify-content-center">
 							<p style="width: 60px; text-align: center;"><?php echo $icon; ?></p>
 						</div>
-						<h3><?php echo $title; ?></h3>
+						<h3 class="text-primary"><?php echo $title; ?></h3>
 						<p><?php echo $telephone; ?></p>
 					    <p><?php echo $email; ?></p>
 					</div>

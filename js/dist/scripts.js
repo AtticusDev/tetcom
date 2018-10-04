@@ -6489,6 +6489,33 @@ jQuery(document).ready(function($){
 	});
 
 
+// Slider for system and product images
+	
+
+  $('.next').on('click', function(){
+  	var currentSlider = $(this).parent().attr('id');
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+
+
+    if(nextImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      nextImg.addClass('active').css('z-index', 10);
+    }
+  });
+
+  $('.prev').on('click', function(){
+  	var currentSlider = $(this).parent();
+  	var currentImage = $(currentSlider);
+  	alert(currentImage);
+//    var currentImg = $('.active');
+    var prevImg = currentImg.prev();
+
+    if(prevImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      prevImg.addClass('active').css('z-index', 10);
+    }
+  });
 
 
 

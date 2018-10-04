@@ -144,17 +144,20 @@ DOWNLOADS SECTION
 				<div class="row" style="padding-left:15px; padding-right:15px;">
 					<ul class="downloadSection">
 						<?php 
-						$args = array( 'post_type' => 'download', 'posts_per_page' => '20', 'orderby' => 'rand' );
+						$args = array( 'post_type' => 'download', 'posts_per_page' => '20', 'orderby' => 'ASC' );
 						$loop = new WP_Query( $args );
 
 						while ( $loop->have_posts() ) : $loop->the_post();
 						 $download = get_field( "download_document" );
 						?>
 						<li>
-							<div class="d-flex">
+							<div class="d-flex pt-3 pb-3">
 								<div style="width: 85%">
 									<p><a href="<?php echo $download; ?>" target="_blank"><?php the_title();?></a></p>
-									<p><?php the_content();?></p>
+									<?php
+									echo wp_trim_words( get_the_content(), 18, '...' );
+									?>
+<!--									<p><?php the_content();?></p>-->
 								</div>
 								<div  style="width: 15%">
 									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/pdf-download.svg">

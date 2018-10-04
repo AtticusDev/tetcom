@@ -13,12 +13,30 @@
 
 	</div><!-- #content -->
 
+		<?php 
+		$templateName = esc_html( get_page_template_slug( $post->ID ) );
+
+		if ($templateName == 'templates/contact.php'){
+		?>
+		<div class="container-fluid" style="background-color: #ffffff;">
+			<div class="row">
+				<div class="footerWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/footer-wave.svg); background-position: center top; background-repeat: no-repeat; background-size: 2686px;">
+				</div>
+			</div>
+		</div>
+		<?php
+		}else{
+		?>
 		<div class="container-fluid" style="background-color: #ebebeb;">
 			<div class="row">
 				<div class="footerWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/footer-wave.svg); background-position: center top; background-repeat: no-repeat; background-size: 2686px;">
 				</div>
 			</div>
 		</div>
+		<?php
+		}
+		?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="row justify-content-end">

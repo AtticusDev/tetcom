@@ -7019,6 +7019,10 @@ h3 {
   background-color: #ffffff;
   color: #000000; }
 
+.readmoreBtn:after, .greenBtn:after, .blackBtn:after, .greyBtn:after {
+  padding-left: 6px;
+  content: '\2192'; }
+
 .greenBtn {
   white-space: normal;
   padding: 0.5rem 2rem;
@@ -7097,6 +7101,41 @@ h3 {
   margin-top: 2rem;
   padding: 1rem; }
 
+/* IMAGE SLIDER */
+.slider-holder {
+  width: 400px;
+  margin: 40px auto;
+  overflow: auto; }
+
+.slider-inner {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px; }
+
+.slider-inner img {
+  display: none;
+  width: 300px;
+  height: 200px; }
+
+.slider-inner img.active {
+  display: inline-block; }
+
+.prev, .next {
+  margin-top: 80px;
+  cursor: pointer; }
+
+.prev {
+  margin-left: 10px;
+  z-index: 100; }
+
+.next {
+  margin-left: 0px;
+  z-index: 100; }
+
+/* END IMAGE SLIDER */
 /* BLACK WAVE BELOW BLACK PANEL */
 .blackBottomWave {
   width: 100%;
@@ -7180,12 +7219,13 @@ div.gform_footer.top_label {
 .downloadSection {
   width: 100%;
   padding: 0px;
-  margin: 0px; }
+  margin-bottom: 5rem; }
 
 .downloadSection li {
   display: block;
   float: left;
   width: 48%;
+  height: 8rem;
   margin-right: 2%;
   padding: 0 1rem;
   border-bottom: 1px solid #000000; }

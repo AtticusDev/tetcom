@@ -102,13 +102,77 @@
 
 						        </div>
 								<div class="col-md-6 pt-4">
-						            <img src="<?php the_post_thumbnail_url(); ?>">
+<!-- IMAGE SLIDER -->
+									<div class="slider-holder" id="<?php echo 'slider'.$postPos; ?>">
+									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-left.png" class="prev" alt="Prev">
+									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-right.png" class="next" alt="Next">
+									      <div class="slider-outer">
+									        <div class="slider-inner">
+											<?php 
+											$images = get_field('system_gallery');
+											$num = 0;
+
+											if( $images ): ?>
+											        <?php foreach( $images as $image ): 
+											        	if($num > 0) {
+											        		?>
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300"/>
+										                     <?php 
+										                     $num++;
+										                 }else{
+										                     ?>
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300" class="active"/>
+										                     <?php 
+										                     $num++;
+										                 }
+										                 ?>
+
+											        <?php endforeach; ?>
+											<?php endif; ?>
+									        </div>
+									      </div>
+									 
+
+									</div>
+<!-- END IMAGE SLIDER -->
 						        </div>
 						        <?php
 								    }else{
 						    	?>
 								<div class="col-md-6 pt-4">
-						            <img src="<?php the_post_thumbnail_url(); ?>">
+<!-- IMAGE SLIDER -->
+									<div class="slider-holder" id="<?php echo 'slider'.$postPos; ?>">
+									      <div class="slider-outer">
+									        <div class="slider-inner">
+											<?php 
+											$images = get_field('system_gallery');
+											$num = 0;
+
+											if( $images ): ?>
+											        <?php foreach( $images as $image ): 
+											        	if($num > 0) {
+											        		?>
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> width="300"" />
+										                     <?php 
+										                     $num++;
+										                 }else{
+										                     ?>
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300" class="active"/>
+										                     <?php 
+										                     $num++;
+										                 }
+										                 ?>
+
+											        <?php endforeach; ?>
+											<?php endif; ?>
+									        </div>
+									</div>
+									 
+									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-left.png" class="prev" alt="Prev">
+									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-right.png" class="next" alt="Next">
+
+									    </div>
+<!-- END IMAGE SLIDER -->
 						        </div>
 								<div class="col-md-6 pt-4">
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

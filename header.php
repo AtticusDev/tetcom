@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="container">
 					<div class="row">
-					    <nav class="navbar navbar-expand-md" style="width: 100%; ">
+					    <nav class="navbar navbar-expand-md navbar-dark" style="width: 100%; ">
 					    		<a class="navbar-brand" href="/">
 							    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/tetcom-logo.jpg" width="135" class="d-inline-block align-top" alt="">
 								</a>
