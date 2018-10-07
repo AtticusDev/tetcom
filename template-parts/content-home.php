@@ -44,6 +44,13 @@ get_template_part( 'template-parts/content', 'servicepanels' );
 get_template_part( 'template-parts/content', 'videos' );
 ?>
 
+	<div class="container-fluid">
+			<div class="row">
+				<div class="blackBottomWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/single-wave.svg); background-position: center bottom; background-repeat: no-repeat; background-size: 2686px;">
+				</div>
+			</div>
+	</div>
+
 
 <?php
 get_template_part( 'template-parts/content', 'testimonials' );

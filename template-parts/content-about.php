@@ -13,7 +13,7 @@
 
 	<div class="container-fluid" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-position: center top; height: 700px; background-repeat: no-repeat; padding: 0px;">
 		<div class="row d-flex align-items-end" style="width: 100%; height: 100%; margin:0px;">
-			<div class="container">
+			<div class="container pt-5">
 				<div class="row">
 						<div class="col-md-6">
 						<?php
@@ -37,7 +37,7 @@ HISTORY SECTION
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 text-white">
+					<div class="col-md-8 text-white pt-4">
 						<?php the_field('history_intro'); ?>
 					</div>
 				</div>
@@ -50,7 +50,7 @@ HISTORY SECTION
 					$description = get_sub_field('details');
 					$color = get_sub_field('color_select');
 				?>
-				<div class="col-sm col-md-4">
+				<div class="col-sm-12 col-md-4">
 					<div class="historyPanel" style="background-color: #<?php echo $color; ?>">
 					<?php if($color == 'ffffff') {?>
 						<h3 class="text-primary"><?php echo $title; ?></h3>
@@ -112,7 +112,6 @@ DEPARTMENTS SECTION
 						?>
 									<?php if($rownumber <= $halfNum) { ?>
 										<li class='d-flex justify-content-between q'>
-											<?php echo $halfNum; ?>
 												<div class="d-flex" style="width: 80%;">
 													<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
 													<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
@@ -146,7 +145,6 @@ DEPARTMENTS SECTION
 						?>
 									<?php if($rownumber > $halfNum) { ?>
 										<li class='d-flex justify-content-between q'>
-											<?php echo $halfNum; ?>
 												<div class="d-flex" style="width: 80%;">
 													<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
 													<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
@@ -165,6 +163,16 @@ DEPARTMENTS SECTION
 			</div>
 		</div>
 	</div>
+
+
+	<div class="container-fluid">
+			<div class="row">
+				<div class="blackBottomWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/single-wave.svg); background-position: center bottom; background-repeat: no-repeat; background-size: 2686px;">
+				</div>
+			</div>
+	</div>
+
+
 
 
 <?php

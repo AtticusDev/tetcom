@@ -16,7 +16,7 @@ ENQUIRY FORM SECTION
 						</div>
 						<div class="col">
 						<?php
-							echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
+							echo do_shortcode('[gravityform id="1" title="false" description="false"]');
 						?>
 						</div>
 				</div>

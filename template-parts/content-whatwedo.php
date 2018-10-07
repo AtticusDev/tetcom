@@ -59,13 +59,13 @@ get_template_part( 'template-parts/content', 'servicepanels' );
 
 
 
-	<div class="container-fluid" style="background-image: url(<?php the_field('middle_image');?>); background-repeat: no-repeat; background-position: center top; height: 450px; background-size: cover;">
+	<div class="container-fluid" style="background-image: url(<?php the_field('middle_image');?>); background-repeat: no-repeat; background-position: center top; height: 650px; background-size: cover;">
 			<div class="row justify-content-center">
 				<div class="container-fluid outer">
 					<div class="inner">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/black-bottom-wave.svg" width="2686" height="160" class="waveImg">					
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/black-bottom-wave.svg" width="2686" class="waveImg">					
 					</div>
-					<div class="inner" style="margin-top:80px;">
+					<div class="inner" style="margin-top:280px;">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/white-wave.svg" class="waveImg">					
 					</div>
 					

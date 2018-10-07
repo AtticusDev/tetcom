@@ -63,11 +63,18 @@
 				 	Test Lane, Southampton SO16 9JX<br />
 				 	&copy; Copyright <?php echo date('Y'); ?> Tetcom Ltd. All Rights Reserved</p>
 				 	<div class="row justify-content-center">
-	 					<div class="socialBox text-center pt-1">
-		            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" width="18" class="mr-1">
-		            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg" width="16" class="mr-1">
-		            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg" width="18">
-		            	</div>
+					            <!-- SOCIAL MEDIA ICONS -->
+					            	<div class="socialBox text-center ml-3 d-flex justify-content-around">
+					            		<div class="tw-icon">
+						            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg">
+						            	</div>
+					            		<div class="fb-icon">
+					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg">
+						            	</div>
+					            		<div class="in-icon">
+					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg">
+					            		</div>
+					            	</div>
 		            </div>
 				</div>
 

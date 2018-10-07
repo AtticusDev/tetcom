@@ -95,14 +95,14 @@
 
     								if( $postPos % 2 == 0 ){
 								?>
-								<div class="col-md-6 pt-4">
+								<div class="col-md-6 pt-4 text-right">
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						            <p><?php the_content(); ?></p>
 	          					    <a href="<?php the_permalink(); ?>" class="btn greenBtn">More info</a>
 
 						        </div>
 								<div class="col-md-6 pt-4">
-<!-- IMAGE SLIDER -->
+<!-- IMAGE SLIDER LEFT-->
 									<div class="slider-holder" id="<?php echo 'slider'.$postPos; ?>">
 									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-left.png" class="prev" alt="Prev">
 									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-right.png" class="next" alt="Next">
@@ -140,7 +140,7 @@
 								    }else{
 						    	?>
 								<div class="col-md-6 pt-4">
-<!-- IMAGE SLIDER -->
+<!-- IMAGE SLIDER RIGHT -->
 									<div class="slider-holder" id="<?php echo 'slider'.$postPos; ?>">
 									      <div class="slider-outer">
 									        <div class="slider-inner">

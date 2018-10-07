@@ -55,7 +55,7 @@
 					      		</div>
 
 					            <!-- SOCIAL MEDIA ICONS -->
-					            	<div class="socialBox text-center ml-3 pt-1 d-flex justify-content-around">
+					            	<div class="socialBox text-center ml-3 d-flex justify-content-around">
 					            		<div class="tw-icon">
 						            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg">
 						            	</div>

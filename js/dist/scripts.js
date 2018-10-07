@@ -6479,7 +6479,10 @@ jQuery(document).ready(function($){
 // Add your custom jQuery here
 
 	$('li.q').on('click', function() {
-		$(this).next().slideToggle(150).siblings('li.a').slideUp();
+
+//    $(this).next().slideToggle(150).siblings('li.a').slideUp();
+
+		$(this).next().slideToggle(150);
 
 		var arrow = $(this).children('i');
 
@@ -6490,13 +6493,12 @@ jQuery(document).ready(function($){
 
 
 // Slider for system and product images
-	
 
-  $('.next').on('click', function(){
-  	var currentSlider = $(this).parent().attr('id');
-    var currentImg = $('.active');
+
+ $('.next').on('click', function(){
+    var currentSlider = $(this).parent().attr('id');
+    var currentImg = $('#'+currentSlider+' .active');
     var nextImg = currentImg.next();
-
 
     if(nextImg.length){
       currentImg.removeClass('active').css('z-index', -10);
@@ -6505,10 +6507,8 @@ jQuery(document).ready(function($){
   });
 
   $('.prev').on('click', function(){
-  	var currentSlider = $(this).parent();
-  	var currentImage = $(currentSlider);
-  	alert(currentImage);
-//    var currentImg = $('.active');
+    var currentSlider = $(this).parent().attr('id');
+    var currentImg = $('#'+currentSlider+' .active');
     var prevImg = currentImg.prev();
 
     if(prevImg.length){
@@ -6516,6 +6516,7 @@ jQuery(document).ready(function($){
       prevImg.addClass('active').css('z-index', 10);
     }
   });
+
 
 
 

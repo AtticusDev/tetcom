@@ -60,6 +60,11 @@
 					<?php endwhile;
 				endif; ?>
 				</div>
+				<div class="row justify-content-end">
+					<div class="col-md-8 text-center">
+						<a href="/contact/" class="btn whiteBtn">View all contacts</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
