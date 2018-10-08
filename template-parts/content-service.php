@@ -78,6 +78,36 @@
 	</div>
 
 
+<!--
+INTRO SECTION
+-->
+<?php if( get_field('service_intro_left_column') ) { ?>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container pt-5">
+				<div class="row">
+						<div class="col-md-6">
+							<div class="p-1">
+								<?php the_field('service_intro_left_column'); ?>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="p-1">
+								<?php the_field('service_intro_right_column'); ?>
+							</div>
+						</div>
+				</div>
+			</div>
+		<div class="container-fluid footerWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/single-wave.svg); background-position: center top; background-repeat: no-repeat; background-size: 2686px;">
+		</div>
+		</div>
+	</div>
+
+<?php } ?>
+
+	
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">

@@ -59,8 +59,8 @@
 					            ?>						</nav>
 					</div>
 
-				 	<p class="light">Tetcom Ltd, Unit 3, Yeoman Business Park,<br />
-				 	Test Lane, Southampton SO16 9JX<br />
+				 	<p class="light">Tetcom Ltd, London Court, <br />
+				 	T64 London Road, Southampton SO15 2AH<br />
 				 	&copy; Copyright <?php echo date('Y'); ?> Tetcom Ltd. All Rights Reserved</p>
 				 	<div class="row justify-content-center">
 					            <!-- SOCIAL MEDIA ICONS -->

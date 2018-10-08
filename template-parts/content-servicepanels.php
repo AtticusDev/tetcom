@@ -19,10 +19,14 @@
 					$link = get_field('button_link');
 				?>
 				<div class="col-sm-12 col-md-3">
+					<div style="height:190px;">
 					<p style="width: 130px; height: 80px;"><?php echo $icon; ?></p>
 					<h3 class="text-primary"><a href="<?php the_permalink(); ?>" title="<?php echo $service; ?>"><?php echo $title; ?></a></h3>
-					<p class="text-white"><?php echo $description; ?></p>
+					<p class="text-white"><?php echo wp_trim_words( $description, 18 ); ?></p>
+					</div>
+					<div style="height: 100px;">
 				    <a href="<?php the_permalink(); ?>" title="<?php echo $service; ?>" class="btn readmoreBtn">Read more</a>
+					</div>
 				</div>
 					<?php 
 					endwhile;
