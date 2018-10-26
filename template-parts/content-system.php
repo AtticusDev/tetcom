@@ -60,7 +60,7 @@
 						    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 						        <?php setup_postdata($post); 
 						        ?>
-								<div class="col-md-6 pt-4">
+								<div class="col-md-8 pt-4">
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						            <p><?php the_content(); ?></p>
 
@@ -69,12 +69,12 @@
 												<div class="d-flex" style="width: 80%;">
 													<div style="width: 85%" class="text-primary">Key Features</div>
 												</div>
-												<i class="fa fa-plus text-primary"></i>
+												<i class="fa fa-plus text-primary" style="padding-top:8px;"></i>
 										</li>
 										<li class='a'><?php echo the_field('key_features') ?></li>
 									</ul>
 						        </div>
-								<div class="col-md-6 pt-4 text-center">
+								<div class="col-md-4 pt-4 text-center">
 						            <img src="<?php the_post_thumbnail_url(); ?>" style="width:300px;">
 								</div>
 						    <?php endforeach; ?>

@@ -119,6 +119,12 @@ h3 {
 }
 
 
+/* SERVICE PANELS */
+
+.serviceIcon {
+  width: 150px;
+}
+
 
 
 /* BUTTON STYLING */
@@ -128,7 +134,7 @@ h3 {
   padding: 0.5rem 2rem;
   border: 0;
   border-radius: 25px;
-  margin-top:3rem;
+  margin-top:2rem;
   margin-bottom: 3rem;
   background-color: #ffffff;
   color: #000000;
@@ -353,21 +359,6 @@ div.gform_footer.top_label {
 }
 
 
-@media (min-width: 768px) {
-  .gform_multi_column_wrapper ul.gform_fields.half_width {
-    width: 50%;
-  }
-  .gform_multi_column_wrapper ul.gform_fields.full_width {
-    width: 100%;
-    clear: both;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
-    clear: both;
-    width: 100%;
-  }
-}
 
 
 /* END FORM STYLING */
@@ -429,7 +420,7 @@ li {
   cursor: pointer;
   border-bottom: 1px solid #000000;
   padding-top: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 .snippets-accordian li.a {
@@ -441,5 +432,33 @@ li {
 
 
 /* END ACCORDIAN */
+
+
+@media (min-width: 768px) {
+  .gform_multi_column_wrapper ul.gform_fields.half_width {
+    width: 50%;
+  }
+  .gform_multi_column_wrapper ul.gform_fields.full_width {
+    width: 100%;
+    clear: both;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+    clear: both;
+    width: 100%;
+  }
+  .readmoreBtn {
+    margin-top: 0.3rem;
+  }
+  h2 {
+    font-size:2rem;
+    font-weight: 100;
+  }
+
+
+}
 
 

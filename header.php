@@ -26,10 +26,9 @@
 		<div class="container-fluid sticky-top" style="background-color: #000000;">
 			<div class="row">
 				<div class="container">
-					<div class="row">
-					    <nav class="navbar navbar-expand-md navbar-dark" style="width: 100%; ">
+					    <nav class="navbar navbar-expand-lg navbar-dark">
 					    		<a class="navbar-brand" href="/">
-							    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/tetcom-logo.jpg" width="135" class="d-inline-block align-top" alt="">
+							    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/tetcom_logo.svg" width="135" alt="">
 								</a>
 								<div class="navbar-text">
 								    <span class="text-white">Call us on</span><br>
@@ -45,30 +44,31 @@
 					              'theme_location' => 'primary',
 					              'depth'      => 2,
 					              'container'  => false,
-					              'menu_class'     => 'navbar-nav',
+					              'menu_class'     => 'navbar-nav ml-auto',
 					              'walker'     => new Bootstrap_Walker_Nav_Menu()
 					              );
 					            if (has_nav_menu('primary')) {
 					              wp_nav_menu($args);
 					            }
 					            ?>
-					      		</div>
-
-					            <!-- SOCIAL MEDIA ICONS -->
-					            	<div class="socialBox text-center ml-3 d-flex justify-content-around">
-					            		<div class="tw-icon">
-						            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg">
+					            <!-- SOCIAL MEDIA ICONS / shows on mobile -->
+					            	<div class="socialBoxMB text-center">
+					            		<div class="d-flex justify-content-around">
+						            		<div class="tw-icon">
+							            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg">
+							            	</div>
+						            		<div class="fb-icon">
+						            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg">
+							            	</div>
+						            		<div class="in-icon">
+						            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg">
+						            		</div>
 						            	</div>
-					            		<div class="fb-icon">
-					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg">
-						            	</div>
-					            		<div class="in-icon">
-					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg">
-					            		</div>
 					            	</div>
 
+
+					      		</div>
 				    	</nav>
-				    </div> <!-- close row -->
 				</div> <!-- close container -->
 			</div>
 		</div>

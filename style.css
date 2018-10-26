@@ -6995,13 +6995,17 @@ h3 {
 .in-icon {
   width: 18px; }
 
+/* SERVICE PANELS */
+.serviceIcon {
+  width: 150px; }
+
 /* BUTTON STYLING */
 .readmoreBtn {
   white-space: normal;
   padding: 0.5rem 2rem;
   border: 0;
   border-radius: 25px;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   background-color: #ffffff;
   color: #000000; }
@@ -7199,18 +7203,6 @@ div.gform_footer.top_label {
   text-align: center;
   font-size: 0.8rem; }
 
-@media (min-width: 768px) {
-  .gform_multi_column_wrapper ul.gform_fields.half_width {
-    width: 50%; }
-  .gform_multi_column_wrapper ul.gform_fields.full_width {
-    width: 100%;
-    clear: both; } }
-
-@media only screen and (max-width: 768px) {
-  .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
-    clear: both;
-    width: 100%; } }
-
 /* END FORM STYLING */
 /* DOWNLOADS */
 .downloadSection {
@@ -7260,7 +7252,7 @@ li {
   cursor: pointer;
   border-bottom: 1px solid #000000;
   padding-top: 10px;
-  padding-bottom: 0px; }
+  padding-bottom: 10px; }
 
 .snippets-accordian li.a {
   display: none; }
@@ -7269,6 +7261,23 @@ li {
   border-top: 1px solid #000000; }
 
 /* END ACCORDIAN */
+@media (min-width: 768px) {
+  .gform_multi_column_wrapper ul.gform_fields.half_width {
+    width: 50%; }
+  .gform_multi_column_wrapper ul.gform_fields.full_width {
+    width: 100%;
+    clear: both; } }
+
+@media only screen and (max-width: 768px) {
+  .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+    clear: both;
+    width: 100%; }
+  .readmoreBtn {
+    margin-top: 0.3rem; }
+  h2 {
+    font-size: 2rem;
+    font-weight: 100; } }
+
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
@@ -7300,12 +7309,16 @@ li {
 .site-header {
   margin-bottom: 3em; }
 
-.socialBox {
+.socialBoxMB {
+  position: relative;
+  display: visible;
+  display: block;
   border-radius: 25px;
   background: #89c34a;
   width: 120px;
   height: 32px;
-  padding: 0 5px; }
+  padding: 0 5px;
+  margin-left: 2rem; }
 
 .navbar-nav .nav-link {
   font-size: 1.05rem;
@@ -7322,6 +7335,26 @@ li {
 .navbar-nav .nav-link.show,
 .navbar-nav .nav-link.active {
   color: #89c34a; }
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    width: 100px; }
+  .socialBoxMB {
+    position: relative;
+    display: visible;
+    display: block;
+    border-radius: 25px;
+    background: #89c34a;
+    width: 120px;
+    height: 32px;
+    padding: 0 5px;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .navbar-text {
+    font-size: 0.9rem; }
+    .navbar-text h3 {
+      font-size: 1.2rem; } }
 
 /*--------------------------------------------------------------
 ## Footer

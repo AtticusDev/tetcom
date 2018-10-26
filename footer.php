@@ -42,7 +42,7 @@
 			<div class="row justify-content-end">
 				<div class="col-md-6 text-center pt-4 pb-4 text-white">
 					<a href="/">
-				 	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tetcom-logo.jpg" width="135" alt=""></a><br />
+				 	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tetcom_logo.svg" width="135" alt=""></a><br />
 				 	<div class="footer-menu ">
 				 		<nav  class="navbar navbar-expand-md  justify-content-center">
 					            <?php
@@ -64,7 +64,7 @@
 				 	&copy; Copyright <?php echo date('Y'); ?> Tetcom Ltd. All Rights Reserved</p>
 				 	<div class="row justify-content-center">
 					            <!-- SOCIAL MEDIA ICONS -->
-					            	<div class="socialBox text-center ml-3 d-flex justify-content-around">
+					            	<div class="socialBoxMB text-center ml-3 d-flex justify-content-around">
 					            		<div class="tw-icon">
 						            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg">
 						            	</div>

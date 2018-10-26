@@ -15,12 +15,14 @@
 		<div class="row d-flex align-items-end" style="width: 100%; height: 100%; margin:0px;">
 			<div class="container">
 				<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-8">
 						<?php
 							the_content();
 						?>
 					    <a href="/contact/" class="btn blackBtn">Make an enquiry</a>
 
+						</div>
+						<div class="col">
 						</div>
 				</div>
 			</div>

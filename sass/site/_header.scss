@@ -2,13 +2,16 @@
 	margin-bottom: 3em;
 }
 
-.socialBox{
-	border-radius: 25px;
-    background: $custom;
-    width: 120px;
-    height: 32px;
-    padding:0 5px;
-
+.socialBoxMB {
+    position: relative;
+    display:visible;
+    display:block;
+     border-radius: 25px;
+      background: $custom;
+      width: 120px;
+      height: 32px;
+      padding:0 5px;
+      margin-left: 2rem;
 }
 
  .navbar-nav {
@@ -35,3 +38,31 @@
       color: $custom;
     }
   }
+
+
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand{
+    width:100px;
+  }
+  .socialBoxMB{
+    position: relative;
+    display:visible;
+    display:block;
+      border-radius: 25px;
+      background: $custom;
+      width: 120px;
+      height: 32px;
+      padding:0 5px;
+      margin-left:0;
+      margin-top: 1rem;
+      margin-bottom:1rem;
+  }
+
+  .navbar-text{
+    font-size: 0.9rem;
+    h3 {
+      font-size:1.2rem; 
+    }
+  }
+}

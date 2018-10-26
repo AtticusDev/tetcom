@@ -11,11 +11,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="container-fluid" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-position: center top; height: 700px; background-repeat: no-repeat; padding: 0px;">
-		<div class="row d-flex align-items-end" style="width: 100%; height: 100%; margin:0px;">
+	<div class="container-fluid" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-position: center bottom;  background-repeat: no-repeat; padding: 0px;">
+		<div class="row d-flex" style="width: 100%; height: 100%; margin:0px;">
 			<div class="container pt-5">
 				<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-8">
 						<?php
 							the_content();
 						?>
@@ -24,8 +24,8 @@
 						</div>
 				</div>
 			</div>
-		<div class="container-fluid footerWave" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/white-about-wave.svg); background-position: center top; background-repeat: no-repeat; background-size: 2686px;">
-		</div>
+			<div class="container-fluid footerWave mt-auto" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/white-about-wave.svg); background-position: center top; background-repeat: no-repeat; background-size: 2686px;">
+			</div>
 		</div>
 	</div>
 
@@ -146,7 +146,7 @@ DEPARTMENTS SECTION
 													<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
 													<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
 												</div>
-												<i class="fa fa-plus text-primary"></i>
+												<i class="fa fa-plus text-primary" style="padding-top:8px;"></i>
 										</li>
 										<li class='a'><?php echo $description; ?></li>
 									<?php } ?>
@@ -179,7 +179,7 @@ DEPARTMENTS SECTION
 													<div style="width: 15%; margin-right: 5%;"><?php echo $icon; ?>&nbsp;</div>
 													<div style="width: 85%" class="text-primary"><?php echo $title; ?></div>
 												</div>
-												<i class="fa fa-plus text-primary"></i>
+												<i class="fa fa-plus text-primary" style="padding-top:8px;"></i>
 										</li>
 										<li class='a'><?php echo $description; ?></li>
 									<?php } ?>
