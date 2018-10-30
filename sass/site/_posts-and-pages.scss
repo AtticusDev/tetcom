@@ -231,6 +231,7 @@ h3 {
   margin-left: 0.8rem;
   margin-top: 2rem;
   padding: 1rem;
+  min-height:170px;
 }
 
 /* CONTACT PANELS */
@@ -252,8 +253,8 @@ h3 {
 }
 
 .slider-inner{
-  width:300px;
-  height:200px;
+  width:400px;
+  height:300px;
   position:relative;
   overflow:hidden;
   float:left;
@@ -262,8 +263,8 @@ h3 {
 
 .slider-inner img{
   display:none;
-  width:300px;
-  height:200px;
+  width:400px;
+  height:300px;
 }
 
 .slider-inner img.active{
@@ -271,7 +272,7 @@ h3 {
 }
 
 .prev,.next{
-  margin-top:80px;
+  margin-top:0px;
   cursor: pointer;
 }
 

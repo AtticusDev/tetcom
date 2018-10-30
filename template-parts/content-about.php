@@ -71,7 +71,7 @@ HISTORY SECTION
 						<?php the_field('history_intro'); ?>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row justify-content-center">
 
 				<?php if( have_rows('history') ): 
 					 while( have_rows('history') ): the_row(); 

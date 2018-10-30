@@ -94,7 +94,7 @@ VIDEO SECTION
 				</div>
 			</div>
 			<div class="container">
-				<div class="row">
+				<div class="row justify-content-center">
 
 						<?php 
 						$args = array( 'post_type' => 'video', 'posts_per_page' => '20', 'orderby' => 'rand' );

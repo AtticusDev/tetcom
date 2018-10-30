@@ -63,7 +63,7 @@ DEPARTMENTS SECTION
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
-				<div class="row">
+				<div class="row justify-content-center">
 				<?php if( have_rows('contact_panels') ): 
 					 while( have_rows('contact_panels') ): the_row(); 
 					// vars

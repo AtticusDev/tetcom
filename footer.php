@@ -65,15 +65,15 @@
 				 	<div class="row justify-content-center">
 					            <!-- SOCIAL MEDIA ICONS -->
 					            	<div class="socialBoxMB text-center ml-3 d-flex justify-content-around">
-					            		<div class="tw-icon">
-						            		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg">
-						            	</div>
-					            		<div class="fb-icon">
-					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg">
-						            	</div>
-					            		<div class="in-icon">
-					            			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg">
-					            		</div>
+						            		<div class="tw-icon">
+							            		<a href="https://twitter.com/tetcomuk" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg"></a>
+							            	</div>
+						            		<div class="fb-icon">
+						            			<a href="https://www.facebook.com/TetcomLtd/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg"></a>
+							            	</div>
+						            		<div class="in-icon">
+						            			<a href="https://www.linkedin.com/company/tetcom/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/in.svg"></a>
+						            		</div>
 					            	</div>
 		            </div>
 				</div>

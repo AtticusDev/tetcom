@@ -123,35 +123,51 @@ INTRO SECTION
 						        <?php setup_postdata($post);
 								      $postPos = $postPos +1;
 
-    								if( $postPos % 2 == 0 ){
+								      //Pull in the gallery images
+
+										$count = count(get_field('system_gallery')); 
+										$images = get_field('system_gallery');
+										$num = 0;
+
+
+
+								//if $postPos is even, content left, image right
+
+    							if( $postPos % 2 == 0 ){
 								?>
 								<div class="col-md-6 pt-4 text-right">
-						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						            <h2 class="text-primary"><?php the_title(); ?></h2>
 						            <p><?php the_content(); ?></p>
-	          					    <a href="<?php the_permalink(); ?>" class="btn greenBtn">More info</a>
+						            <!-- HIDE THIS BUTTON AS NOT NEEDED NOW-->
+	          					    <!-- <a href="<?php the_permalink(); ?>" class="btn greenBtn">More info</a> -->
 
 						        </div>
 								<div class="col-md-6 pt-4">
 <!-- IMAGE SLIDER LEFT-->
 									<div class="slider-holder" id="<?php echo 'slider'.$postPos; ?>">
+									<?php
+										if($count > '1'){
+									?>
+
 									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-left.png" class="prev" alt="Prev">
 									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-right.png" class="next" alt="Next">
+									<?php
+									}
+									?>									    
+
 									      <div class="slider-outer">
 									        <div class="slider-inner">
 											<?php 
-											$images = get_field('system_gallery');
-											$num = 0;
-
 											if( $images ): ?>
 											        <?php foreach( $images as $image ): 
 											        	if($num > 0) {
 											        		?>
-										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300"/>
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="400"/>
 										                     <?php 
 										                     $num++;
 										                 }else{
 										                     ?>
-										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300" class="active"/>
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="400" class="active"/>
 										                     <?php 
 										                     $num++;
 										                 }
@@ -161,33 +177,41 @@ INTRO SECTION
 											<?php endif; ?>
 									        </div>
 									      </div>
-									 
-
 									</div>
 <!-- END IMAGE SLIDER -->
 						        </div>
 						        <?php
+						        //if $postPos is not even, content right, image left
+
 								    }else{
 						    	?>
 								<div class="col-md-6 pt-4">
 <!-- IMAGE SLIDER RIGHT -->
-									<div class="slider-holder" id="<?php echo 'slider'.$postPos; ?>">
-									      <div class="slider-outer">
-									        <div class="slider-inner">
-											<?php 
-											$images = get_field('system_gallery');
-											$num = 0;
+									<div class="slider-holder text-right" id="<?php echo 'slider'.$postPos; ?>">
+									<?php
+										if($count > '1'){
+									?>
+								      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-left.png" class="prev" alt="Prev">
+								      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-right.png" class="next" alt="Next">
+								      <?php
+										  }
+									  ?>
 
+									    <div class="slider-outer">
+									        <div class="slider-inner">
+
+
+											<?php
 											if( $images ): ?>
 											        <?php foreach( $images as $image ): 
 											        	if($num > 0) {
 											        		?>
-										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> width="300"" />
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="400" />
 										                     <?php 
 										                     $num++;
 										                 }else{
 										                     ?>
-										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300" class="active"/>
+										                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="400" class="active"/>
 										                     <?php 
 										                     $num++;
 										                 }
@@ -196,18 +220,17 @@ INTRO SECTION
 											        <?php endforeach; ?>
 											<?php endif; ?>
 									        </div>
-									</div>
+										</div>
 									 
-									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-left.png" class="prev" alt="Prev">
-									      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-right.png" class="next" alt="Next">
 
 									    </div>
 <!-- END IMAGE SLIDER -->
 						        </div>
 								<div class="col-md-6 pt-4">
-						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						            <h2 class="text-primary"><?php the_title(); ?></h2>
 						            <p><?php the_content(); ?></p>
-	          					    <a href="<?php the_permalink(); ?>" class="btn greenBtn">More info</a>
+						            <!-- HIDE THIS BUTTON AS NOT NEEDED NOW-->
+	          					    <!-- <a href="<?php the_permalink(); ?>" class="btn greenBtn">More info</a> -->
 						        </div>
 
 						    	<?php
