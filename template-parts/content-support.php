@@ -107,7 +107,7 @@ VIDEO SECTION
 							<div class="videoPanel">
 							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo $video; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p class="videoTitle text-primary"><?php the_title();?></p>
-							<?php the_content();?>
+							<p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
 							</div>
 						</div>
 						<?php 
@@ -149,7 +149,19 @@ DOWNLOADS SECTION
 				<div class="row" style="padding-left:15px; padding-right:15px;">
 					<ul class="downloadSection">
 						<?php 
-						$args = array( 'post_type' => 'download', 'posts_per_page' => '20', 'orderby' => 'ASC' );
+						$args = array( 'post_type' => 'download', 'posts_per_page' => '20', 'orderby' => 'ASC', 
+
+						'tax_query' => array(
+								array(
+									'taxonomy' => 'category',
+									'field'    => 'slug',
+									'terms' => 'document'
+								),
+							),
+
+
+
+						 );
 						$loop = new WP_Query( $args );
 
 						while ( $loop->have_posts() ) : $loop->the_post();
@@ -158,7 +170,7 @@ DOWNLOADS SECTION
 						<li>
 							<div class="d-flex pt-3 pb-3">
 								<div style="width: 85%">
-									<p><a href="<?php echo $download; ?>" target="_blank"><?php the_title();?></a></p>
+									<p class="text-uppercase"><a href="<?php echo $download; ?>" target="_blank"><?php the_title();?></a></p>
 									<?php
 									echo wp_trim_words( get_the_content(), 18, '...' );
 									?>

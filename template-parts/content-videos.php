@@ -32,7 +32,7 @@ VIDEO SECTION
 							<div class="videoPanel">
 							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo $video; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p class="videoTitle text-primary"><?php the_title();?></p>
-							<?php the_content();?>
+							<p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
 							</div>
 						</div>
 						<?php 

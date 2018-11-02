@@ -7,6 +7,7 @@ $download = new CPT(array(
 	'slug' => 'download'
 ),
 	array(
-    'supports' => array('title', 'editor', 'custom-fields'),
+    'supports' => array('title', 'editor', 'custom-fields', 'category'),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-format-aside'
 ));

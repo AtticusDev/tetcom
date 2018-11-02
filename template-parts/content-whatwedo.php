@@ -60,7 +60,7 @@ get_template_part( 'template-parts/content', 'servicepanels' );
 					<div class="inner">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/black-bottom-wave.svg" width="2686" class="waveImg">					
 					</div>
-					<div class="inner" style="margin-top:280px;">
+					<div class="inner" style="margin-top:320px;">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/white-wave.svg" class="waveImg">					
 					</div>
 					

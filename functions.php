@@ -46,6 +46,7 @@ function tetcom_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'tetcom' ),
 		'secondary' => esc_html__( 'Secondary', 'tetcom' ),
+		'footer' => esc_html__( 'Footer', 'tetcom' ),
 	) );
 
 	/*

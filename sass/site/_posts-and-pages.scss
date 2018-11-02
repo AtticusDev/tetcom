@@ -199,7 +199,8 @@ h3 {
   p {
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 0px;  
+  margin-top: 0px;
+  min-height:50px;  
   }
 
 }
@@ -390,7 +391,7 @@ div.gform_footer.top_label {
 
 /* ACCORDIAN */
 
-ul,
+.snippets-accordian 
 li {
   list-style: none;
   display: block;

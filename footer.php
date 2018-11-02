@@ -16,7 +16,7 @@
 		<?php 
 		$templateName = esc_html( get_page_template_slug( $post->ID ) );
 
-		if ($templateName == 'templates/contact.php'){
+		if ($templateName == 'templates/contact.php' ){
 		?>
 		<div class="container-fluid" style="background-color: #ffffff;">
 			<div class="row">
@@ -76,6 +76,25 @@
 						            		</div>
 					            	</div>
 		            </div>
+				 	<div class="bottom-menu ">
+				 		<nav  class="navbar navbar-expand-md  justify-content-center">
+					            <?php
+					            $args = array(
+					              'theme_location' => 'footer',
+					              'depth'      => 2,
+					              'container'  => false,
+					              'menu_class'     => 'navbar-nav bottom-menu',
+					              'walker'     => new Bootstrap_Walker_Nav_Menu()
+					              );
+					            if (has_nav_menu('footer')) {
+					              wp_nav_menu($args);
+					            }
+					            ?>	
+					    </nav>
+					</div>
+
+
+
 				</div>
 
 
