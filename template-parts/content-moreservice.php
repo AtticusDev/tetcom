@@ -10,14 +10,10 @@
 				<div class="row">
 					<div class="col-md-8 text-white">
 						<?php the_field('product_intro'); ?>
+						<h2 class="text-primary">Explore what else we do</h2>
 					</div>
 				</div>
 				<div class="row d-flex align-items-top">
-						<div class="col-sm-12 col-md-3 text-right mt-4 mb-4 p-5">
-						<h2 class="text-primary">Explore what else we do</h2>
-						</div>
-
-
 					<?php 
 					$currentID = get_the_ID();
 					$args = array( 'post_type' => 'service', 'posts_per_page' => '4', 'order' => 'ASC', 'post__not_in' => array($currentID));

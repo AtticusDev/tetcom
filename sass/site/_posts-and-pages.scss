@@ -124,7 +124,9 @@ h3 {
 .serviceIcon {
   width: 150px;
 }
-
+.servicePanel {
+  padding: 0 4rem;
+}
 
 
 /* BUTTON STYLING */
@@ -248,14 +250,14 @@ h3 {
 /* IMAGE SLIDER */
 
 .slider-holder{
-  width:400px;
-  margin:40px auto;
+  width:100%;
+  margin:20px auto;
   overflow:auto;
 }
 
 .slider-inner{
-  width:400px;
-  height:300px;
+  width:100%;
+  height:100%;
   position:relative;
   overflow:hidden;
   float:left;
@@ -265,7 +267,7 @@ h3 {
 .slider-inner img{
   display:none;
   width:400px;
-  height:300px;
+//  height:300px;
 }
 
 .slider-inner img.active{
@@ -459,7 +461,17 @@ li {
     font-size:2rem;
     font-weight: 100;
   }
-
+  .downloadSection li{
+      clear:both;
+      width:100%;
+    }
+  .slider-inner{
+    width:320px;
+    height:231px;
+    }
+  .servicePanel {
+    padding: 0 1rem;
+  }
 
 }
 
