@@ -59,9 +59,9 @@
 					            ?>						</nav>
 					</div>
 
-				 	<p class="light">Tetcom Ltd, London Court, <br />
+				 	<p class="light">Tetcom Network Services Limited, London Court, <br />
 				 	T64 London Road, Southampton SO15 2AH<br />
-				 	&copy; Copyright <?php echo date('Y'); ?> Tetcom Ltd. All Rights Reserved</p>
+				 	&copy; Copyright <?php echo date('Y'); ?> Tetcom Network Services Limited. All Rights Reserved</p>
 				 	<div class="row justify-content-center">
 					            <!-- SOCIAL MEDIA ICONS -->
 					            	<div class="socialBoxMB text-center ml-3 d-flex justify-content-around">
